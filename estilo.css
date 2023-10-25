@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+   
+}
+
+
+.header-top{
+    height: 60px;
+    background-color: black;
+}
+
+.numero{
+    color: aliceblue;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width:70%;
+}
+
+ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-left: 500px;
+}
+
+li{
+    list-style: none;
+    color: black;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam thmor pro', sans-serif;;
+}
+
+li:hover{
+    color: #D21617;
+}
+
+#logo{
+    width: 90px;
+    height: auto;
+
+}
+
+#banner{
+    background-image: url('./equipe.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas com largura igual */
+    grid-gap: 100px; /* Espaçamento entre as colunas */
+    padding: 20px;
+    height: 300px; /* Define a altura da grade para ocupar a altura da janela de visualização */
+   
+  }
+  
+  .item {
+    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo semi-transparente */
+    padding: 20px;
+    border: 1px solid #000;
+  }  
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 1900px;
+}
+
+/* Estilize os ícones de redes sociais */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.social-icons li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px 0 10px;
+    
+}
+
+/* Estilize o endereço e informações do desenvolvedor */
+.address, .developer-info {
+    margin-top: 10px;
+}
