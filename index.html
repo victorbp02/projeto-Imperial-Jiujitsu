@@ -1,44 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imperial Jiu Jitsu</title>
     <link rel="stylesheet" href="./estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="header-top"></div>
+    <div class="header-top">
+        <div class="tarja">
+            <div class="grau0"></div>
+            <div class="grau"></div>
+            <div class="grau2"></div>
+            <div class="grau3"></div>
+        </div>
+    </div>
     <header>
-        <img id="logo" src="./imperialjiujitsu.jpg">
+        <img id="logo" src="./img/imperialjiujitsu.jpg">
         <nav>
             <ul>
-                <a href="">
+                <a href="./index.html" style="color: white;">
                     <li>Home</li>
                 </a>
-                <a href="./contatos.html">
+                <a href="./contatos.html" style="color: white;">
                     <li>Contatos</li>
                 </a>
-                <a href="imperialjj.html">
+                <a href="imperialjj.html" style="color: white;">
                     <li>Team</li>
+                </a>
+                <a href="horario.html" style="color: white;">
+                    <li>Horario</li>
                 </a>
             </ul>
         </nav>
     </header>
-    <hr>  
+
     <div id="banner"></div>
 
-    <div class="grid-container">
-        <div class="item">
-        <center> <h2>Div 1</h2> </center>
-         <center> <p>alguma informação </p> </center>
+    <main>
+        <h1 style="text-align: center; font-size: 65px; margin: 20px; ">Bem vindo à Imperial Jiu-Jitsu</h1>
+
+        <p style="text-align: center; font-size: 30px; margin: 30px;">Somos uma academia de Artes Marciais atualizada
+            com o que tem de
+            mais moderno em metodologia de ensino buscando um melhor aprendizado para seus alunos e atletas.
+        </p>
+
+
+        <div id="trailer-container">
+            <div class="content">
+                <video controls class="trailer">
+                    <source src="./THE BATMAN Trailer (2022).mp4" type="video/mp4">
+                    seu navegador não possui suporte para vídeos
+                </video>
+                <div id="sinopse">
+                    <p class="description">
+                    <h2 style="font-size: 19px;">Por que escolher a Imperial Jiu-Jitsu?</h2>
+                    <br>
+                    A Imperial Jiu-Jitsu é a escolha ideal para quem busca uma
+                    experiência
+                    excepcional no mundo do Jiu-Jitsu. Nossa academia é dedicada a proporcionar:
+
+                    Professores altamente qualificados e experientes.
+
+                    Um ambiente acolhedor e amigável para todos os níveis de
+                    habilidade.
+
+                    Programas de treinamento personalizados.
+
+                    Um forte senso de familia entre nossos alunos.
+
+                    Participação em competições de alto nível.
+
+                    Escolher a Imperial Jiu-Jitsu significa escolher qualidade,
+                    dedicação e
+                    crescimento pessoal no mundo do Jiu-Jitsu.
+                    </p>
+                    <button class="button">Agende sua aula experimental aqui </button>
+                </div>
+            </div>
         </div>
-        <div class="item">
-         <center> <h2>Por que escolher a Imperial Jiu-Jitsu </h2> </center>
-         <center> <p>informação da imperial Jiu-Jitsu</p> </center>
+
+
+        <div style="display: flex; align-items: center; justify-content: center; margin-top: 80px;">
+            <h2>Professores:</h2>
         </div>
-      </div>
-      
+        
+        <div style="display: flex; justify-content: space-around; margin-top: 100px;">
+            <div class="card">
+                <img src="./img/equipe.jpg" alt="Imagem 1">
+                <div class="card-description">
+                    <h2 style="text-align: center;">Rodrigo Assumpção</h2>
+                    <hr>
+                    <p style="text-align: center; color: #808080;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum porro tempora? Dolor minima obcaecati quam quisquam ad, iusto sunt repellat itaque, distinctio, aspernatur quaerat. Molestiae suscipit recusandae veritatis dolore?</p>
+                    <br><br>
+                    <h4>titulos:</h4>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./img/imperialjiujitsu.jpg" alt="Imagem 2">
+                <div class="card-description">
+                    <h2 style="text-align: center;">Mauro Ribas</h2>
+                    <hr>
+                    <p style="text-align: center; color: #808080;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis minus fugit consequuntur quaerat facere voluptatem suscipit earum repellendus! Optio non ut quam necessitatibus distinctio est earum totam unde dolor eaque!</p>
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
     <!-- começar o footer -->
 
     <footer>
@@ -58,24 +133,27 @@
                 </a>
             </ul>
         </nav>
-          
+
         <div class="address">
-          Endereço:
-          41250-420, Brasil, Salvador - BA,<br> Condomínio Dom Bosco, 44 - São Marcos, Estrada da Muriçoca 350-D 
+            Endereço:
+            41250-420, Brasil, Salvador - BA,<br> Condomínio Dom Bosco, 44 - São Marcos, Estrada da Muriçoca 350-D
         </div>
         <hr>
-        <img id="logo" src="./imperialjiujitsu_pretoebranco.jpg
-        " style="margin-top: 10px;">
+        <img style="margin: 0 0 0 15px;" id="logo" src="./img/imperialjiujitsu_pretoebranco.jpg" alt="">
+
         <div class="developer-info">
-            Desenvolvido por: Victor Batista
+            Desenvolvido por: Victor Batista <br>
+            <span>Todos os direitos reservados ©</span>
         </div>
     </footer>
-   
+
 
     <script>
-        
-        
-        
+
+
+
+
     </script>
 </body>
+
 </html>
