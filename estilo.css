@@ -79,10 +79,9 @@ nav {
 
 ul {
     display: flex;
-    width: 50%;
-    justify-content: space-around;
-
-    margin-left: 500px;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 100px;
 }
 
 li {
@@ -204,39 +203,38 @@ main {
     padding: 10px;
 }
 
-
-.box-caixa {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .horario {
-    height: 800px;
-    width: 80%;
+    width: 100%;
+    height: 300px;
+    background-color: #ccc;
+    opacity: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-
 }
 
-.foto-horario {
-    height: 670px;
-    width: 50%;
-    margin-right: 200px;
-    margin-bottom: 150px;
+.table-container {
+    overflow-x: auto;
+    width: 100%;
 }
 
-.info {
-    height: 700px;
-    width: 700px;
-    display: flex;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th, td {
+    border: 5px solid black;
+    padding: 8px;
     text-align: center;
-    flex-direction: column;
 }
+
+th {
+    background-color: #f2f2f2;
+}
+
+
 
 
 
@@ -267,7 +265,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 460px;
+    margin-left: 50px;
 
 
 }
