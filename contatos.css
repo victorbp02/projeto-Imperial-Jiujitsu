@@ -13,9 +13,43 @@ body{
 }
 
 .header-top{
-    height: 60px;
+    height: 40px;
     background-color: black;
+    display: flex;
+    justify-content: right;
 }
+
+.tarja {
+    height: 40px;
+    width: 10%;
+    background-color: red;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.grau0 {
+    background-color: #fff;
+    height: 40px;
+    width: 7px;
+}
+
+.grau {
+    background-color: #fff;
+    height: 40px;
+    width: 7px;
+    
+}
+
+.grau2 {
+    background-color: #fff;
+    height: 40px;
+    width: 7px;
+    margin-right: 50px;
+}
+
+
 
 .numero{
     color: aliceblue;
@@ -33,13 +67,14 @@ header{
 }
 
 nav{
-    width: 30%;
+    width:70%;
 }
 
 ul{
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    width: 50%;
+    justify-content: space-around;
+    margin-left: 500px;
 }
 
 li{

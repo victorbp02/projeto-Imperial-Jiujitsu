@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -12,82 +12,233 @@ body {
     padding: 0;
     width: 100%;
     height: 100vh;
-   
+
 }
 
 
-.header-top{
-    height: 60px;
+.header-top {
+    height: 40px;
     background-color: black;
-}
-
-.numero{
-    color: aliceblue;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    justify-content: right;
+}
+
+.tarja {
+    height: 40px;
+    width: 10%;
+    background-color: red;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.grau0 {
+    background-color: #fff;
+    height: 40px;
+    width: 7px;
+}
+
+.grau {
+    background-color: #fff;
+    height: 40px;
+    width: 7px;
 
 }
 
-header{
+.grau2 {
+    background-color: #fff;
+    height: 40px;
+    width: 7px;
+    margin-right: 50px;
+}
+
+
+
+
+
+header {
     height: 90px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1000;
+    opacity: 80%;
 }
 
-nav{
-    width:70%;
+header:hover {
+    height: 130px;
+    opacity: 80%;
+    transition: 1s;
+
 }
 
-ul{
+
+nav {
+    width: 50%;
+}
+
+ul {
     display: flex;
     width: 50%;
     justify-content: space-around;
+
     margin-left: 500px;
 }
 
-li{
+li {
     list-style: none;
     color: black;
     cursor: pointer;
-    font-size: 19px;
+    font-size: 22px;
     transition: .5s;
-    font-family: 'kdam thmor pro', sans-serif;;
+    font-family: 'kdam thmor pro', sans-serif;
+    ;
 }
 
-li:hover{
+li:hover {
     color: #D21617;
+
 }
 
-#logo{
+#logo {
     width: 90px;
     height: auto;
 
 }
 
-#banner{
-    background-image: url('./equipe.jpg');
+#banner {
+    background-image: url('./img/equipe.jpg');
     background-position: 50% 50%;
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 730px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas com largura igual */
-    grid-gap: 100px; /* Espaçamento entre as colunas */
-    padding: 20px;
-    height: 300px; /* Define a altura da grade para ocupar a altura da janela de visualização */
+
+
+main {
+    border: outset;
+
+}
+
+
+#trailer-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trailer {
+    width: 80%;
+    height: 350px;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 200px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'kdam thmor pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 400px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+
+    color: #000;
+}
+
+.card {
+    width: 400px;
+    /* Largura do card */
+    display: inline-block;
+    margin: 10px;
+    /* Espaço entre os cards */
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 20px;
    
-  }
-  
-  .item {
-    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo semi-transparente */
-    padding: 20px;
-    border: 1px solid #000;
-  }  
+}
+
+.card img {
+    max-width: 100%;
+    height: 300px;
+}
+
+.card-description {
+    padding: 10px;
+}
+
+
+.box-caixa {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horario {
+    height: 800px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+
+}
+
+.foto-horario {
+    height: 670px;
+    width: 50%;
+    margin-right: 200px;
+    margin-bottom: 150px;
+}
+
+.info {
+    height: 700px;
+    width: 700px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+
 
 footer {
     background-color: #000;
@@ -95,6 +246,18 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: 1900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
 }
 
 /* Estilize os ícones de redes sociais */
@@ -103,8 +266,10 @@ footer {
     padding: 0;
     display: flex;
     justify-content: center;
-    
-    
+    align-items: center;
+    margin-right: 460px;
+
+
 }
 
 .social-icons li {
@@ -115,11 +280,12 @@ footer {
 .social-icons a {
     color: #fff;
     text-decoration: none;
-    margin: 0 30px 0 10px;
-    
+    margin: 0 40px 0 10px;
+
 }
 
 /* Estilize o endereço e informações do desenvolvedor */
-.address, .developer-info {
+.address,
+.developer-info {
     margin-top: 10px;
 }
