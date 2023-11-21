@@ -13,23 +13,27 @@
         .table-container {
             overflow-x: auto;
             width: 100%;
+            background-color: rgba(0, 0, 0,0.1);
         }
 
         table {
             width: 95%;
             border-collapse: collapse;
-           margin: 0 0 0 45px;
+            margin: 0 0 0 45px;
         }
 
         th,
         td {
-            border: 1px solid black;
+            border: 3px solid black;
             padding: 8px;
             text-align: center;
+            color: rgb(0, 0, 0);
+
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: rgba(0, 0, 0, 0.1);
+            
         }
     </style>
 </head>
@@ -49,13 +53,13 @@
                 <a href="./index.html" style="color: white;">
                     <li>Home</li>
                 </a>
-                <a href="./contatos.html" style="color: white;">
+                <a href="contatos.html" style="color: white;">
                     <li>Contatos</li>
                 </a>
                 <a href="imperialjj.html" style="color: white;">
                     <li>Team</li>
                 </a>
-                <a href="horario.html" style="color: white;">
+                <a href="#horario" style="color: white;">
                     <li>Horario</li>
                 </a>
             </ul>
@@ -65,7 +69,7 @@
     <div id="banner"></div>
 
     <main>
-        <h1 style="text-align: center; font-size: 65px; margin: 20px; ">Bem vindo à Imperial Jiu-Jitsu</h1>
+        <h1 class="titulo-imperial" style="text-align: center; font-size: 45px; margin: 20px;">Bem vindo à Imperial Jiu-Jitsu</h1>
 
         <p style="text-align: center; font-size: 30px; margin: 30px;">Somos uma academia de Artes Marciais
             atualizada
@@ -115,9 +119,11 @@
         <div
             style="display: flex; align-items: center; justify-content: center; margin-top: 80px; flex-direction: column;">
             <h2>Professores:</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias a adipisci, fugiat laudantium non est
-                accusantium aspernatur asperiores dolorem totam quae aliquam dolores cum praesentium libero neque
-                debitis ipsum ex.</p>
+            <div>
+                <p class="text-professor">Nossos professores são os mais adequados para ministrar aulas de Jiu-Jitsu por
+                    sua excepcional experiência, comprometimento e habilidades pedagógicas. Cada instrutor é um
+                    praticante dedicado e apaixonado, com anos de treinamento e expertise no esporte.</p>
+            </div>
         </div>
 
         <div style="display: flex; justify-content: space-around; margin-top: 100px;">
@@ -150,303 +156,308 @@
                 </div>
             </div>
         </div>
-        <div class="horario">
-            <h3>Quadro de horario:</h3>
-        </div>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>horario</th>
-                        <th>seg</th>
-                        <th>ter</th>
-                        <th>qua</th>
-                        <th>qui</th>
-                        <th>sex</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>6:00</td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+        <div id="horario">
+            <div class="horario">
+                <h3>Quadro de horario:</h3>
+            </div>
 
-                            06:00 as 7:30 <br>
-                            <br>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>horario</th>
+                            <th>seg</th>
+                            <th>ter</th>
+                            <th>qua</th>
+                            <th>qui</th>
+                            <th>sex</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6:00</td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                06:00 as 7:30 <br>
+                                <br>
 
-                            06:00 as 7:30 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                06:00 as 7:30 <br>
+                                <br>
 
-                            06:00 as 7:30 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                06:00 as 7:30 <br>
+                                <br>
 
-                            06:00 as 7:30 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                06:00 as 7:30 <br>
+                                <br>
 
-                            06:00 as 7:30 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>9:00</td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                06:00 as 7:30 <br>
+                                <br>
 
-                            09:00 as 10:00 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9:00</td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                09:00 as 10:00 <br>
+                                <br>
 
-                            09:00 as 10:00 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                09:00 as 10:00 <br>
+                                <br>
 
-                            09:00 as 10:00 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                09:00 as 10:00 <br>
+                                <br>
 
-                            09:00 as 10:00 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                09:00 as 10:00 <br>
+                                <br>
 
-                            09:00 as 10:00 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>10:00</td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                09:00 as 10:00 <br>
+                                <br>
 
-                            10:00 as 11:30 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                10:00 as 11:30 <br>
+                                <br>
 
-                            10:00 as 11:30 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                10:00 as 11:30 <br>
+                                <br>
 
-                            10:00 as 11:30 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                10:00 as 11:30 <br>
+                                <br>
 
-                            10:00 as 11:30 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                10:00 as 11:30 <br>
+                                <br>
 
-                            10:00 as 11:30 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>15:00</td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                10:00 as 11:30 <br>
+                                <br>
 
-                            15:00 as 16:30 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15:00</td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Mauro
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                15:00 as 16:30 <br>
+                                <br>
 
-                            15:00 as 16:30 <br>
-                            <br>
+                                Prof: Mauro
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Mauro
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                15:00 as 16:30 <br>
+                                <br>
 
-                            15:00 as 16:30 <br>
-                            <br>
+                                Prof: Mauro
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Mauro
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                15:00 as 16:30 <br>
+                                <br>
 
-                            15:00 as 16:30 <br>
-                            <br>
+                                Prof: Mauro
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Mauro
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                15:00 as 16:30 <br>
+                                <br>
 
-                            15:00 as 16:30 <br>
-                            <br>
+                                Prof: Mauro
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Mauro
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>16:30</td>
-                        <td>Infanto - Juvenil <br>
-                            <br>
+                                15:00 as 16:30 <br>
+                                <br>
 
-                            16:30 as 17:30 <br>
-                            <br>
+                                Prof: Mauro
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16:30</td>
+                            <td>Infanto - Juvenil <br>
+                                <br>
 
-                            Prof: Mauro
-                        </td>
-                        <td></td>
-                        <td>Infanto - Juvenil <br>
-                            <br>
+                                16:30 as 17:30 <br>
+                                <br>
 
-                            16:30 as 17:30 <br>
-                            <br>
+                                Prof: Mauro
+                            </td>
+                            <td></td>
+                            <td>Infanto - Juvenil <br>
+                                <br>
 
-                            Prof: Mauro
-                        </td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>18:00</td>
-                        <td></td>
-                        <td> Kids <br>
-                            <br>
+                                16:30 as 17:30 <br>
+                                <br>
 
-                            18:00 as 19:30 <br>
-                            <br>
+                                Prof: Mauro
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>18:00</td>
+                            <td></td>
+                            <td> Kids <br>
+                                <br>
 
-                            Prof: Mauro
-                        </td>
-                        <td></td>
-                        <td> Kids <br>
-                            <br>
+                                18:00 as 19:30 <br>
+                                <br>
 
-                            18:00 as 19:30 <br>
-                            <br>
+                                Prof: Mauro
+                            </td>
+                            <td></td>
+                            <td> Kids <br>
+                                <br>
 
-                            Prof: Mauro
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>19:30</td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                18:00 as 19:30 <br>
+                                <br>
 
-                            19:30 as 21:00 <br>
-                            <br>
+                                Prof: Mauro
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>19:30</td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                19:30 as 21:00 <br>
+                                <br>
 
-                            19:30 as 21:00 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                19:30 as 21:00 <br>
+                                <br>
 
-                            19:30 as 21:00 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                19:30 as 21:00 <br>
+                                <br>
 
-                            19:30 as 21:00 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                        <td>Jiu-Jitsu Adulto <br>
-                            <br>
+                                19:30 as 21:00 <br>
+                                <br>
 
-                            19:30 as 21:00 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                            <td>Jiu-Jitsu Adulto <br>
+                                <br>
 
-                            Prof: Rodrigo
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>21:00</td>
-                        <td></td>
-                        <td>Kids <br>
-                            <br>
+                                19:30 as 21:00 <br>
+                                <br>
 
-                            21:00 as 22:00 <br>
-                            <br>
+                                Prof: Rodrigo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>21:00</td>
+                            <td></td>
+                            <td>Kids <br>
+                                <br>
 
-                            Prof: Mauro</td>
-                        <td></td>
-                        <td>Kids <br>
-                            <br>
+                                21:00 as 22:00 <br>
+                                <br>
 
-                            21:00 as 22:00 <br>
-                            <br>
+                                Prof: Mauro
+                            </td>
+                            <td></td>
+                            <td>Kids <br>
+                                <br>
 
-                            Prof: Mauro</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+                                21:00 as 22:00 <br>
+                                <br>
+
+                                Prof: Mauro
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
     </main>
@@ -485,7 +496,7 @@
 
 
     <script>
-
+        
 
 
 
