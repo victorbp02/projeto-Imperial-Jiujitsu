@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imperial Jiu Jitsu</title>
     <link rel="stylesheet" href="./estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <style>
         .table-container {
             overflow-x: auto;
             width: 100%;
-            background-color: rgba(0, 0, 0,0.1);
+            background-color: rgba(0, 0, 0, 0.1);
         }
 
         table {
@@ -33,7 +32,7 @@
 
         th {
             background-color: rgba(0, 0, 0, 0.1);
-            
+
         }
     </style>
 </head>
@@ -68,10 +67,12 @@
 
     <div id="banner"></div>
 
-    <main>
-        <h1 class="titulo-imperial" style="text-align: center; font-size: 45px; margin: 20px;">Bem vindo à Imperial Jiu-Jitsu</h1>
+    <main class="elemento" id="elemento1" id="elemento2">
+        <h1 class="titulo-imperial" style="text-align: center; font-size: 45px; margin: 20px;">Bem vindo à Imperial
+            Jiu-Jitsu</h1>
 
-        <p style="text-align: center; font-size: 30px; margin: 30px;">Somos uma academia de Artes Marciais
+        <p class="paragrafo01" style="text-align: center; font-size: 30px; margin: 30px;">Somos uma academia de Artes
+            Marciais
             atualizada
             com o que tem de
             mais moderno em metodologia de ensino buscando um melhor aprendizado para seus alunos e atletas.
@@ -84,6 +85,7 @@
                     <source src="./THE BATMAN Trailer (2022).mp4" type="video/mp4">
                     seu navegador não possui suporte para vídeos
                 </video>
+                
                 <div id="sinopse">
                     <p class="description">
                     <h2 style="font-size: 30px;">Por que escolher a Imperial Jiu-Jitsu?</h2>
@@ -118,7 +120,7 @@
 
         <div
             style="display: flex; align-items: center; justify-content: center; margin-top: 80px; flex-direction: column;">
-            <h2>Professores:</h2>
+            <h1>Professores:</h1>
             <div>
                 <p class="text-professor">Nossos professores são os mais adequados para ministrar aulas de Jiu-Jitsu por
                     sua excepcional experiência, comprometimento e habilidades pedagógicas. Cada instrutor é um
@@ -127,7 +129,7 @@
         </div>
 
         <div style="display: flex; justify-content: space-around; margin-top: 100px;">
-            <div class="card">
+            <div class="card" style="margin-left: 20px;">
                 <img src="./img/equipe.jpg" alt="Igem 1">
                 <div class="card-description">
                     <h2 style="text-align: center;">Rodrigo Assumpção</h2>
@@ -140,6 +142,7 @@
                     <h4 style="text-align: center;">titulos:</h4>
                 </div>
             </div>
+            <img src="./img/imperialjiujitsu.jpg" style="height: 300px; width: 300px; ;">
 
             <div class="card">
                 <img src="./img/asdasd.jpg" alt="Imagem 2">
@@ -158,7 +161,7 @@
         </div>
         <div id="horario">
             <div class="horario">
-                <h3>Quadro de horario:</h3>
+                <h1>Quadro de horario:</h1>
             </div>
 
             <div class="table-container">
@@ -460,6 +463,10 @@
             </div>
         </div>
 
+        <h1 style="text-align: center; margin-top: 50px;">localização</h1>
+
+        <div id="map" style="height: 700px; margin: 30px 50px 0 50px;"></div>
+
     </main>
     <!-- começar o footer -->
 
@@ -496,9 +503,15 @@
 
 
     <script>
-        
+        var mapa = L.map('map').setView([-12.9357669447098, -38.416400754774315], 12);
 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(mapa);
 
+        L.marker([-12.9357669447098, -38.416400754774315]).addTo(mapa)
+            .bindPopup('Imperial Jiu-jitsu 41250-420, Brasil, Salvador - BA ')
+                .openPopup();
 
     </script>
 </body>
