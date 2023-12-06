@@ -46,7 +46,7 @@
         </div>
     </div>
     <header>
-        <img id="logo" src="./img/imperialjiujitsu.jpg">
+        <img id="logo" src="./img/imperialjiujitsu_pretoebranco.jpg">
         <nav>
             <ul>
                 <a href="./index.html" style="color: white;">
@@ -58,63 +58,109 @@
                 <a href="imperialjj.html" style="color: white;">
                     <li>Team</li>
                 </a>
-                <a href="#horario" style="color: white;">
-                    <li>Horario</li>
-                </a>
+                <li><a href="#" onclick="scrollToSection('section1')" style="color: white;">Horario</a></li>
             </ul>
         </nav>
     </header>
-
-    <div id="banner"></div>
-
+    <section id="home" class="parallax-container">
+        <div class="parallax-bg" data-speed="0.4"></div>
+        <div class="content01">
+            <h1 style="text-align: center; font-size: 80px; margin: 20px; margin-top: 400px;">Imperial Jiu-Jitsu</h1>
+            <p style="text-align: center; font-size: 40px; margin: 30px;">Somos uma academia de Artes
+                Marciais
+                atualizada
+                com o que tem de
+                mais moderno em metodologia de ensino buscando um melhor aprendizado para seus alunos e atletas.</p>
+        </div>
+    </section>
     <main class="elemento" id="elemento1" id="elemento2">
-        <h1 class="titulo-imperial" style="text-align: center; font-size: 45px; margin: 20px;">Bem vindo à Imperial
-            Jiu-Jitsu</h1>
-
-        <p class="paragrafo01" style="text-align: center; font-size: 30px; margin: 30px;">Somos uma academia de Artes
-            Marciais
-            atualizada
-            com o que tem de
-            mais moderno em metodologia de ensino buscando um melhor aprendizado para seus alunos e atletas.
-        </p>
-
 
         <div id="trailer-container">
             <div class="content">
-                <video controls class="trailer">
-                    <source src="./THE BATMAN Trailer (2022).mp4" type="video/mp4">
-                    seu navegador não possui suporte para vídeos
-                </video>
-                
-                <div id="sinopse">
-                    <p class="description">
-                    <h2 style="font-size: 30px;">Por que escolher a Imperial Jiu-Jitsu?</h2>
-                    <br>
-                    A Imperial Jiu-Jitsu é a escolha ideal para quem busca uma
-                    experiência
-                    excepcional no mundo do Jiu-Jitsu. Nossa academia é dedicada a proporcionar:
+                <div class="slides">
+                    <input class="input" type="radio" name="slide" id="slide1" checked>
 
-                    Professores altamente qualificados e experientes.
+                    <input class="input" type="radio" name="slide" id="slide2">
 
-                    Um ambiente acolhedor e amigável para todos os níveis de
-                    habilidade.
+                    <input class="input" type="radio" name="slide" id="slide3">
 
-                    Programas de treinamento personalizados.
+                    <input class="input" type="radio" name="slide" id="slide4">
 
-                    Um forte senso de familia entre nossos alunos.
+                    <input class="input" type="radio" name="slide" id="slide5">
 
-                    Participação em competições de alto nível.
 
-                    Escolher a Imperial Jiu-Jitsu significa escolher qualidade,
-                    dedicação e
-                    crescimento pessoal no mundo do Jiu-Jitsu.
-                    </p>
-                    <a href="https://wa.me/557192403473" target="_blank" style="color: #D21617;">
-                        <button class="button">Agende sua aula experimental aqui </button>
-                    </a>
+                    <div class="slide s1">
+                        <img src="./img/asdasd.jpg" alt="">
+                    </div>
 
+                    <div class="slide">
+                        <img src="./img/imperialjiujitsu.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./img/imperialjiujitsu_pretoebranco.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./img/equipe.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./img/asdasd.jpg" alt="">
+                    </div>
                 </div>
             </div>
+
+            <div class="navigation">
+
+                <label class="bar" for="slide1"></label>
+                <label class="bar" for="slide2"></label>
+                <label class="bar" for="slide3"></label>
+                <label class="bar" for="slide4"></label>
+                <label class="bar" for="slide5"></label>
+
+            </div>
+
+            <div class="informaçoes">
+                <div class="inf1">
+
+                </div>
+
+                <div class="inf2">
+
+                </div>
+
+            </div>
+
+            <div id="sinopse">
+                <p class="description">
+                <h2 style="font-size: 30px; text-align: center;">Por que escolher a Imperial Jiu-Jitsu?</h2>
+                <br>
+                A Imperial Jiu-Jitsu é a escolha ideal para quem busca uma
+                experiência
+                excepcional no mundo do Jiu-Jitsu. Nossa academia é dedicada a proporcionar:
+
+                Professores altamente qualificados e experientes.
+
+                Um ambiente acolhedor e amigável para todos os níveis de
+                habilidade.
+
+                Programas de treinamento personalizados.
+
+                Um forte senso de familia entre nossos alunos.
+
+                Participação em competições de alto nível.
+
+                Escolher a Imperial Jiu-Jitsu significa escolher qualidade,
+                dedicação e
+                crescimento pessoal no mundo do Jiu-Jitsu.
+                </p>
+                <a href="https://wa.me/557192403473" target="_blank" style="color: #D21617;">
+                    <button class="button">Agende sua aula experimental aqui </button>
+                </a>
+
+            </div>
+        </div>
         </div>
 
 
@@ -164,7 +210,7 @@
                 <h1 style="font-size: 40px;">Quadro de horario:</h1>
             </div>
 
-            <div class="table-container">
+            <div class="table-container" id="section1">
                 <table>
                     <thead>
                         <tr>
@@ -463,9 +509,7 @@
             </div>
         </div>
 
-        <h1 style="text-align: center; margin-top: 50px; font-size: 40px;">localização</h1>
-
-        <div id="map" style="height: 700px; margin: 30px 50px 0 50px;"></div>
+       
 
     </main>
     <!-- começar o footer -->
@@ -503,15 +547,43 @@
 
 
     <script>
-        var mapa = L.map('map').setView([-12.9357669447098, -38.416400754774315], 12);
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(mapa);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
 
-        L.marker([-12.9357669447098, -38.416400754774315]).addTo(mapa)
-            .bindPopup('Imperial Jiu-jitsu 41250-420, Brasil, Salvador - BA ')
-                .openPopup();
+        //////////////////////////////////////////////
+        /////////////////////////////////////////////
+
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.slider img');
+
+        images[currentIndex].classList.add('active');
+
+        function nextImage() {
+            images[currentIndex].classList.remove('active');
+
+            currentIndex++;
+
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+
+            images[currentIndex].classList.add('active');
+        }
+
+        function startSlider() {
+            setInterval(nextImage, 3000);
+        }
+
+        window.onload = startSlider;
+        
+
+
+
 
     </script>
 </body>
