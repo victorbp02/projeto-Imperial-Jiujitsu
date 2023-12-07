@@ -175,15 +175,15 @@ li:hover {
 
 .content {
     height: 640px;
-    width: 950px;
+    width: 980px;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
     top: 50%;
     left: 28%;
     transform: translate(-50%, -50%);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    margin-top: 760px;
+    box-shadow: 10px 10px 5px 0px rgb(0, 0, 0, 1.0);
+    margin-top: 740px;
     
 }
 
@@ -196,7 +196,7 @@ li:hover {
 .navigation {
     position: absolute;
     
-    left: 23%;
+    left: 22%;
     display: flex;
     margin-top: 750px;
 
