@@ -6,35 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imperial Jiu Jitsu</title>
     <link rel="stylesheet" href="./estilo.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <style>
-        .table-container {
-            overflow-x: auto;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-
-        table {
-            width: 95%;
-            border-collapse: collapse;
-            margin: 0 0 0 45px;
-        }
-
-        th,
-        td {
-            border: 3px solid black;
-            padding: 8px;
-            text-align: center;
-            color: rgb(0, 0, 0);
-
-        }
-
-        th {
-            background-color: rgba(0, 0, 0, 0.1);
-
-        }
-    </style>
 </head>
 
 <body>
@@ -121,17 +92,7 @@
 
             </div>
 
-            <div class="informaçoes">
-                <div class="inf1">
-
-                </div>
-
-                <div class="inf2">
-
-                </div>
-
-            </div>
-
+            
             <div id="sinopse">
                 <p class="description">
                 <h2 style="font-size: 30px; text-align: center;">Por que escolher a Imperial Jiu-Jitsu?</h2>
@@ -174,43 +135,38 @@
             </div>
         </div>
 
-        <div style="display: flex; justify-content: space-around; margin-top: 100px;">
-            <div class="card" style="margin-left: 20px;">
-                <img src="./img/equipe.jpg" alt="Igem 1">
-                <div class="card-description">
-                    <h2 style="text-align: center;">Rodrigo Assumpção</h2>
-                    <hr>
-                    <p style="text-align: center; color: #808080;">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Dolor nostrum porro tempora? Dolor minima obcaecati quam quisquam ad,
-                        iusto sunt repellat itaque, distinctio, aspernatur quaerat. Molestiae suscipit recusandae
-                        veritatis dolore?</p>
-                    <br><br>
-                    <h4 style="text-align: center;">titulos:</h4>
+        <div style="display: flex; justify-content: space-around; height: 800px;">
+            <div class="card">
+                <img src="./img/fotoreis.jpg" alt="Foto">
+                <div class="info">
+                    <h3>Nome: gabriel Muniz</h3>
+                    <br>
+                    <br>
+                    <p>Idade: 23</p>
+                    <br>
+                    <br>
+                    <p> Titulos: campeao brasileiro</p>
+                    <br>
+                    <br>
+                    <p>Graduação: Blue Belt</p>
                 </div>
             </div>
-            <img src="./img/imperialjiujitsu.jpg" style="height: 300px; width: 300px;align-items: center ;">
+            <img src="./img/imperialjiujitsu_pretoebranco.jpg" style="height: 300px; width: 300px;align-items: center ; margin-top: 250px;">
 
             <div class="card">
-                <img src="./img/asdasd.jpg" alt="Imagem 2">
-                <div class="card-description">
-                    <h2 style="text-align: center;">Mauro Ribas</h2>
-                    <hr>
-                    <p style="text-align: center; color: #808080;">Lorem ipsum dolor sit, amet consectetur
-                        adipisicing elit. Corporis minus fugit consequuntur quaerat facere voluptatem suscipit earum
-                        repellendus! Optio non ut quam necessitatibus distinctio est earum totam unde dolor eaque!
-                    </p>
-                    <br><br>
-                    <h4 style="text-align: center;">titulos:</h4>
-
+                <img src="./img/balotelli.jpg" alt="Foto">
+                <div class="info">
+                    <h3>Nome: gabriel Muniz</h3>
+                    <p>Idade: 23</p>
+                    <p> Titulos: campeao brasileiro</p>
+                    <p>Graduação: Blue Belt</p>
                 </div>
             </div>
         </div>
-        <div id="horario">
-            <div class="horario">
-                <h1 style="font-size: 40px;">Quadro de horario:</h1>
-            </div>
 
+        <div>
             <div class="table-container" id="section1">
+                <h1 class="horario">Quadro de Horário</h1>
                 <table>
                     <thead>
                         <tr>
@@ -509,37 +465,21 @@
             </div>
         </div>
 
-       
+
 
     </main>
     <!-- começar o footer -->
 
     <footer>
-        <nav class="navegacao">
-            <ul class="social-icons">
-                <!-- Ícone do Instagram -->
-                <a href="https://www.instagram.com/  imperialjiujitsu">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <!-- Ícone de e-mail -->
-                <a href="mailto:seu_email@gmail.com">
-                    <i class="far fa-envelope"></i>
-                </a>
-                <!-- Ícone do Facebook -->
-                <a href="https://www.facebook.com/sua_pagina">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </ul>
-        </nav>
-
-        <div class="address">
+       
+        <div>
             Endereço:
             41250-420, Brasil, Salvador - BA,<br> Condomínio Dom Bosco, 44 - São Marcos, Estrada da Muriçoca 350-D
         </div>
         <hr>
-        <img style="margin: 0 0 0 15px;" id="logo" src="./img/imperialjiujitsu_pretoebranco.jpg" alt="">
+        <img style="margin: 0 0 0 15px;" id="logo" src="./img/imperialjiujitsu.jpg" alt="">
 
-        <div class="developer-info">
+        <div>
             Desenvolvido por: Victor Batista <br>
             <span>Todos os direitos reservados ©</span>
         </div>
@@ -580,7 +520,7 @@
         }
 
         window.onload = startSlider;
-        
+
 
 
 
