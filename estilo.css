@@ -81,9 +81,7 @@ header {
 
 header:hover {
     height: 130px;
-
-    transition: 1s;
-
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -192,14 +190,14 @@ li:hover {
 }
 
 .content .slide img {
-    height: 100%;
     width: 100%;
-    background-size: cover;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 .navigation {
     position: absolute;
-    left: 22%;
+    left: 24%;
     display: flex;
     margin-top: 750px;
 }
@@ -263,7 +261,7 @@ input {
     margin-left: 1000px;
     color: #fff;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .description {
@@ -271,6 +269,7 @@ input {
     font-size: 19px;
     font-family: 'kdam thmor pro', sans-serif;
     width: 70%;
+    
 
 }
 
@@ -290,8 +289,9 @@ input {
     font-weight: bold;
     border: none;
     outline: none;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
     margin-left: 80px;
+    margin-top: 50px;
 
 }
 
@@ -347,6 +347,7 @@ input {
     border: groove;
     border-radius: 10px;
     background-color: red;
+    font-size: 24px;
 }
 
 .card:hover img {
